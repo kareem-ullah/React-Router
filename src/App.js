@@ -18,8 +18,8 @@ function App(props) {
   return (
     <Container fluid className="App">
       <Row>
-        <Col>
-          <h1 className="home">Hello React</h1>
+        <Col lg={12} md={12} sm={12} xs={12} className="home">
+          <h1 >Hello React</h1>
         </Col>
       </Row>
 
@@ -32,9 +32,20 @@ function App(props) {
           </header>
         </Col>
       </Row>
-          <h1 className="home">// Home//</h1>
-          <Button className="btn" variant="outline-primary" onClick={homeToabout.bind(this)}>About</Button>
-          <Button className="btn" variant="outline-success" onClick={contact.bind(this)}>Contact</Button>
+      <Row>
+        <Col lg={12} md={12} sm={12} xs={12} className="home">
+          <h1>// Home//</h1>
+          </Col>
+          </Row>
+          <Row>
+            <Col lg={6} md={6} sm={6} xs={12} className="btn">
+          <Button  variant="primary" size="lg" block onClick={homeToabout.bind(this)}>About</Button>
+          </Col>
+          <Col lg={6} md={6} sm={6} xs={12} className="btn">
+          <Button  variant="success" size="lg" block onClick={contact.bind(this)}>Contact</Button>
+          </Col>
+          {/* </div> */}
+          </Row>
 
     </Container>
   );

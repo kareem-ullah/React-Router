@@ -16,41 +16,39 @@ class Contact extends Component {
     }
 
     render() {
-        //         let users = {
-        //             2643: {
-        //                 name: 'shadab',
-        //                 cell: 'abc'
-        //             },
-        //             2644: {
-        //                 name: 'ali',
-        //                 cell: 'aaaa'
-        //             },
-        //             2645: {
-        //                 name: 'wasi',
-        //                 cell: 'xqw'
-        //             }
-        //         }
-        //         console.log("Props", this.props);
-        // let requiredUser = users[this.props.match.params.id]
-
-
-
         return (
             <Container fluid className="App">
                 <Row>
-                    <Col lg={12}>
-                    <h1 className="Contact">Hello Contact</h1>
+                    <Col lg={12} md={12} sm={12} xs={12} className="Contact">
+                    <h1 >Hello Contact</h1>
                     </Col>
                 </Row>
+                <Row>
+                    <Col>
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1>MD.SHADAB</h1>
 
                 </header>
-                <h1 className="Contact">//Contact//</h1>
+                    </Col>
+                </Row>
 
-                <Button variant="outline-dark" onClick={this.GotoHome.bind(this)}>Home</Button>
-                <Button variant="outline-primary" onClick={this.GotoAbout.bind(this)}>About</Button>
+                        <Row>
+                            <Col lg={12} md={12} sm={12} xs={12} className="Contact">
+                                <h1 >//Contact//</h1>
+                            </Col>
+                        </Row>
+
+
+                        <Row>
+                                <Col lg={6} md={6} sm={6} xs={12} className="btn">
+                            <Button  variant="dark" size="lg" block onClick={this.GotoHome.bind(this)}>Home</Button>
+                                </Col>
+                                <Col lg={6} md={6} sm={6} xs={12} className="btn">
+                            <Button  variant="primary" size="lg" block onClick={this.GotoAbout.bind(this)}>About</Button>
+                                </Col>
+                            </Row>
+                
 
             </Container>
         );
